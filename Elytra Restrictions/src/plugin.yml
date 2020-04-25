@@ -1,0 +1,12 @@
+name: ElytraRestrictions
+main: com.palmtreefever.ElytraRestrictions.Main
+version: 1.0
+api-version: 1.15
+author: palmtreefever
+description: Limit the ability of Elyras!
+
+commands:
+  getvel:
+     usage: /getvel
+     description: Get Debug Velocities including the max speed and average!
+     permission: ER.GetVel
