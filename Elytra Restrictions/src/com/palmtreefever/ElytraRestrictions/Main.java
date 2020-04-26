@@ -8,6 +8,8 @@ import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import com.palmtreefever.ElytraRestrictions.Commands.GetVel;
+import com.palmtreefever.ElytraRestrictions.Events.AntiGoldFarms;
+import com.palmtreefever.ElytraRestrictions.Events.AntiRoofPearl;
 import com.palmtreefever.ElytraRestrictions.Events.Gliding;
 
 public class Main extends JavaPlugin implements Listener {
@@ -18,6 +20,8 @@ public class Main extends JavaPlugin implements Listener {
 	public void onEnable() {
 		plugin = this;
 		Bukkit.getPluginManager().registerEvents(new Gliding(), this);
+		Bukkit.getPluginManager().registerEvents(new AntiRoofPearl(), this);
+		Bukkit.getPluginManager().registerEvents(new AntiGoldFarms(), this);
 		getCommand("getvel").setExecutor(new GetVel());
 		loadConfig();
 	}

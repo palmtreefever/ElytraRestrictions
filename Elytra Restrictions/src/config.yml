@@ -4,3 +4,4 @@ Elytra-Speed-Max: 1.8
 ##
 ServerPrefix: '&a[Server Name]&f'
 NoPermission: '&4 You do not have permission!'
+DenyNetherRoof: '&4 Not allowed up here, teleport out!'

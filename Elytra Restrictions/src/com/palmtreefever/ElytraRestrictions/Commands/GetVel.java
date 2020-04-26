@@ -19,7 +19,7 @@ public class GetVel implements CommandExecutor {
 		if (cmd.getName().equalsIgnoreCase("getvel")) {
 			if (sender.hasPermission("ER.GetVel")) {
 				if(Main.Vs.isEmpty()) {
-					sender.sendMessage((ChatColor.translateAlternateColorCodes('&',sName + " No data collected yet!")));
+					sender.sendMessage((ChatColor.translateAlternateColorCodes('&',sName + " No data collected yet! (It's hard disabled because it wasnt smooth at slowing elytra speeds)")));
 					return true;
 				}
 				sender.sendMessage((ChatColor.translateAlternateColorCodes('&',sName +" Out Of " + Main.Vs.size() + ", " + Collections.max(Main.Vs) + " is the max!")));
